@@ -95,8 +95,9 @@
   #define HEATER_0_PIN                      PC3
 #endif
 #if HOTENDS == 1
-  #ifndef FAN1_PIN
-    #define FAN1_PIN                        PB0
+	  #ifndef FAN_PIN	
+    #define FAN_PIN                        PB0 //PART COOLING FAN	
+    //set this to our main fan control as heatsink/extruder fan is automatic
   #endif
 #else
   #ifndef HEATER_1_PIN
@@ -104,7 +105,8 @@
   #endif
 #endif
 #ifndef FAN_PIN
-  #define FAN_PIN                           PB1   // FAN
+  #define FAN_PIN                           PB1   //HOTEND HEATSINK FAN	
+  #undef FAN_PIN
 #endif
 #ifndef HEATER_BED_PIN
   #define HEATER_BED_PIN                    PA0
