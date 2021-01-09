@@ -130,7 +130,7 @@
     #define KILL_PIN_STATE                    true  // Enable MKSPWC PIN STATE
   #endif
 
-  #define FIL_RUNOUT_PIN                      PA4   // LVGL UI FILAMENT RUNOUT1 PIN - MT_DET_PIN
+  #define MT_DET_PIN                      PA4   // LVGL UI FILAMENT RUNOUT1 PIN - MT_DET_PIN
   #define MT_DET_2_PIN                         PE6   // LVGL UI FILAMENT RUNOUT2 PIN
   #define MT_DET_PIN_INVERTING                false // LVGL UI filament RUNOUT PIN STATE
 
